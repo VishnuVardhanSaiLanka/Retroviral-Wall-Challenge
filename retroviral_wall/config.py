@@ -20,7 +20,7 @@ for path in [
     path.mkdir(parents=True, exist_ok=True)
 
 EXTERNAL_PDBS = {
-    "pe2_complex": {"pdb_id": "8W8H", "description": "Prime editor cryo-EM structure"},
+    "pe2_complex": {"pdb_id": "8WUV", "description": "Prime editor cryo-EM structure"},
     "mmlv_rt_substrate": {"pdb_id": "7UVO", "description": "MMLV-RT with template-primer"},
     "hiv1_rt_substrate": {"pdb_id": "1RTD", "description": "HIV-1 RT with RNA:DNA hybrid"},
     "cas9_alone": {"pdb_id": "4ZT0", "description": "SpCas9 crystal structure"},

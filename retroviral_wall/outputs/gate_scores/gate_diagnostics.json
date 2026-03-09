@@ -1,0 +1,44 @@
+{
+  "foldability_score": {
+    "overall_auc": 0.5410052910052909,
+    "retroviral_within_auc": 0.4722222222222222,
+    "family_eta_squared": 0.054660101763432674,
+    "active_mean": 0.019274142362649887,
+    "inactive_mean": 0.014520509650500545
+  },
+  "fusion_compat_score": {
+    "overall_auc": 0.6137566137566137,
+    "retroviral_within_auc": 0.5833333333333333,
+    "family_eta_squared": 0.2536163879360797,
+    "active_mean": 0.4841790067206391,
+    "inactive_mean": 0.40991047472587816
+  },
+  "fusion_compat_clash_score": {
+    "overall_auc": 0.6633597883597884,
+    "retroviral_within_auc": 0.5416666666666667,
+    "family_eta_squared": 0.261585705393683,
+    "active_mean": 0.45252712976699894,
+    "inactive_mean": 0.2753422808674396
+  },
+  "substrate_binding_score": {
+    "overall_auc": 0.5998677248677248,
+    "retroviral_within_auc": 0.5277777777777778,
+    "family_eta_squared": 0.07957871299209135,
+    "active_mean": 0.8609478646502566,
+    "inactive_mean": 0.8442522424828813
+  },
+  "catalytic_score": {
+    "overall_auc": 0.6117724867724866,
+    "retroviral_within_auc": 0.5555555555555556,
+    "family_eta_squared": 0.20135806629951825,
+    "active_mean": 0.8386775554361263,
+    "inactive_mean": 0.8016629166369814
+  },
+  "processivity_score": {
+    "overall_auc": 0.5925925925925926,
+    "retroviral_within_auc": 0.7916666666666667,
+    "family_eta_squared": 0.03277996046618563,
+    "active_mean": 0.7702212438152265,
+    "inactive_mean": 0.712807193480613
+  }
+}

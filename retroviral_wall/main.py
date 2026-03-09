@@ -77,13 +77,15 @@ def run_pipeline() -> dict:
     best_preds = None
     best_strategy = None
     best_f1 = -1.0
+    strategy_results: dict[str, dict] = {}
 
-    for strategy in ["multiplicative", "bayesian_lr", "bart"]:
+    for strategy in GateIntegrator.available_strategies():
         integrator = GateIntegrator(strategy=strategy)
         preds = integrator.fit_predict_lofo(gate_scores, labels, families)
         results = evaluate_lofo_predictions(preds, sequences)
         print(f"\nStrategy: {strategy}")
         print_results(results)
+        strategy_results[strategy] = results
         f1 = results["primary_metric"]["LOFO_macro_F1_4_folds"]
         if f1 > best_f1:
             best_f1 = f1
@@ -96,18 +98,26 @@ def run_pipeline() -> dict:
         integrator = GateIntegrator(strategy=best_strategy)
         preds = integrator.fit_predict_lofo(gate_scores, labels, families, handcrafted_residuals=residuals)
         res = evaluate_lofo_predictions(preds, sequences)
+        strategy_results[f"{best_strategy}+residuals"] = res
         if res["primary_metric"]["LOFO_macro_F1_4_folds"] > best_f1:
             best_results = res
             best_preds = preds
             best_f1 = res["primary_metric"]["LOFO_macro_F1_4_folds"]
+            best_strategy = f"{best_strategy}+residuals"
 
     assert best_preds is not None and best_results is not None
     out_pred = OUTPUT_DIR / "predictions" / "submission.csv"
+    triage_out = OUTPUT_DIR / "predictions" / "triage_report.csv"
     best_preds[["rt_name", "predicted_active", "predicted_score"]].to_csv(out_pred, index=False)
+    best_preds.to_csv(triage_out, index=False)
     with open(OUTPUT_DIR / "predictions" / "evaluation_results.json", "w", encoding="utf-8") as f:
         json.dump(best_results, f, indent=2)
+    with open(OUTPUT_DIR / "predictions" / "strategy_comparison.json", "w", encoding="utf-8") as f:
+        json.dump(strategy_results, f, indent=2)
 
     print(f"\nSaved predictions to {out_pred}")
+    print(f"Saved triage report to {triage_out}")
+    print(f"Best strategy: {best_strategy}")
     print(f"Best LOFO macro-F1: {best_f1:.3f}")
     return best_results
 

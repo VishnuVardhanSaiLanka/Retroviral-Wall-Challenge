@@ -4,18 +4,22 @@ import numpy as np
 
 from retroviral_wall.gates.base import AbstractGate, GateResult
 from retroviral_wall.utils.geometry import sigmoid
-from retroviral_wall.utils.pdb_utils import mean_and_core_plddt
+from retroviral_wall.utils.pdb_utils import foldability_structure_features
 
 
 class FoldabilityGate(AbstractGate):
     def __init__(self):
         super().__init__("foldability")
         self.weights = {
-            "plddt_mean": 0.30,
-            "plddt_core": 0.20,
-            "thermo_37": 0.25,
-            "solubility": 0.15,
-            "instability": 0.10,
+            "plddt_mean": 0.18,
+            "plddt_core": 0.12,
+            "high_conf_frac": 0.18,
+            "low_conf_frac": 0.10,
+            "longest_conf_segment": 0.12,
+            "contact_density": 0.10,
+            "thermo_37": 0.10,
+            "solubility": 0.06,
+            "instability": 0.04,
         }
 
     def compute_scores(self, sequences, structures_dir, handcrafted, external_data):
@@ -23,7 +27,7 @@ class FoldabilityGate(AbstractGate):
         for _, row in sequences.iterrows():
             rt_name = row["rt_name"]
             pdb_path = f"{structures_dir}/{rt_name}.pdb"
-            plddt_mean, plddt_core = mean_and_core_plddt(pdb_path)
+            sf = foldability_structure_features(pdb_path)
             hc = handcrafted[handcrafted["rt_name"] == rt_name].iloc[0]
 
             thermo_37 = np.nanmean([hc.get("t40_raw", np.nan), hc.get("t45_raw", np.nan)])
@@ -37,8 +41,12 @@ class FoldabilityGate(AbstractGate):
             instability = sigmoid(-(instability_idx - 40) / 10) if not np.isnan(instability_idx) else 0.5
 
             sub = {
-                "plddt_mean": plddt_mean,
-                "plddt_core": plddt_core,
+                "plddt_mean": sf["plddt_mean"],
+                "plddt_core": sf["plddt_core"],
+                "high_conf_frac": sf["high_conf_frac"],
+                "low_conf_frac": float(1.0 - sf["low_conf_frac"]),
+                "longest_conf_segment": sf["longest_conf_segment"],
+                "contact_density": sf["contact_density"],
                 "thermo_37": float(thermo_37),
                 "solubility": float(solubility),
                 "instability": float(instability),
@@ -47,8 +55,10 @@ class FoldabilityGate(AbstractGate):
             miss = sum(1 for v in sub.values() if abs(v - 0.5) < 1e-8)
             conf = float(max(0.2, 1 - 0.12 * miss))
             failure = ""
-            if plddt_mean < 0.55:
+            if sf["plddt_mean"] < 0.55:
                 failure = "Low global pLDDT"
+            elif sf["high_conf_frac"] < 0.25:
+                failure = "Insufficient high-confidence folded core"
             elif thermo_37 < 0.35:
                 failure = "Low thermostability proxy"
 
