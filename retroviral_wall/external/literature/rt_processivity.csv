@@ -1,0 +1,3 @@
+rt_name,organism,processivity_nt,kcat_s,optimal_temp_C,source_doi
+MMLV-RT,Moloney murine leukemia virus,45,,37,10.1016/0092-8674(86)90598-0
+HIVpol+MMLVRNaseH_RT,HIV-1,30,,37,10.1016/0092-8674(89)90450-8
