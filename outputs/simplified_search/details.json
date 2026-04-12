@@ -1,0 +1,314 @@
+{
+  "biology_lr": {
+    "model": "biology_lr",
+    "lofo_macro_f1_informative": 0.46031746031746035,
+    "overall_f1": 0.391304347826087,
+    "overall_auc": 0.6481481481481481,
+    "retroviral_tp_of_12": 2,
+    "feature_usage": {
+      "triad_found_bin": 7,
+      "triad_best_rmsd": 7,
+      "sasa_avg": 4,
+      "pocket_hbonds_per_res": 4,
+      "thumb_surface_net_charge": 4,
+      "instability_index": 4,
+      "camsol_score": 4,
+      "protein_length_aa": 4,
+      "D1_D2_dist": 3,
+      "D2_D3_dist": 3
+    },
+    "per_family": {
+      "CRISPR-associated": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "tn": 3
+      },
+      "Group_II_Intron": {
+        "f1": 0.8,
+        "auc": 1.0,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 2
+      },
+      "LTR_Retrotransposon": {
+        "f1": 0.22222222222222224,
+        "auc": 0.6111111111111112,
+        "tp": 1,
+        "fp": 6,
+        "fn": 1,
+        "tn": 3
+      },
+      "Other": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 4
+      },
+      "Retron": {
+        "f1": 0.5333333333333333,
+        "auc": 0.7428571428571429,
+        "tp": 4,
+        "fp": 6,
+        "fn": 1,
+        "tn": 1
+      },
+      "Retroviral": {
+        "f1": 0.2857142857142857,
+        "auc": 0.5416666666666666,
+        "tp": 2,
+        "fp": 0,
+        "fn": 10,
+        "tn": 6
+      },
+      "Unclassified": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1
+      }
+    }
+  },
+  "gates_default_lr": {
+    "model": "gates_default_lr",
+    "lofo_macro_f1_informative": 0.4666666666666667,
+    "overall_f1": 0.4615384615384615,
+    "overall_auc": 0.6216931216931217,
+    "retroviral_tp_of_12": 7,
+    "feature_usage": {
+      "foldability_score": 7,
+      "fusion_compat_score": 7,
+      "fusion_compat_clash_score": 7,
+      "substrate_binding_score": 7,
+      "catalytic_score": 7,
+      "processivity_score": 7
+    },
+    "per_family": {
+      "CRISPR-associated": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 4
+      },
+      "Group_II_Intron": {
+        "f1": 0.6666666666666666,
+        "auc": 0.33333333333333337,
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "tn": 1
+      },
+      "LTR_Retrotransposon": {
+        "f1": 0.3636363636363636,
+        "auc": 0.7222222222222222,
+        "tp": 2,
+        "fp": 7,
+        "fn": 0,
+        "tn": 2
+      },
+      "Other": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "tn": 3
+      },
+      "Retron": {
+        "f1": 0.20000000000000004,
+        "auc": 0.2857142857142857,
+        "tp": 1,
+        "fp": 4,
+        "fn": 4,
+        "tn": 3
+      },
+      "Retroviral": {
+        "f1": 0.6363636363636365,
+        "auc": 0.7500000000000001,
+        "tp": 7,
+        "fp": 3,
+        "fn": 5,
+        "tn": 3
+      },
+      "Unclassified": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1
+      }
+    }
+  },
+  "gates_clean_lr": {
+    "model": "gates_clean_lr",
+    "lofo_macro_f1_informative": 0.4666666666666667,
+    "overall_f1": 0.42857142857142855,
+    "overall_auc": 0.6111111111111112,
+    "retroviral_tp_of_12": 7,
+    "feature_usage": {
+      "foldability_score": 7,
+      "fusion_compat_score": 7,
+      "fusion_compat_clash_score": 7,
+      "substrate_binding_score": 7,
+      "catalytic_score": 7,
+      "processivity_score": 7
+    },
+    "per_family": {
+      "CRISPR-associated": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 5,
+        "fn": 0,
+        "tn": 0
+      },
+      "Group_II_Intron": {
+        "f1": 0.6666666666666666,
+        "auc": 0.6666666666666667,
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "tn": 1
+      },
+      "LTR_Retrotransposon": {
+        "f1": 0.3636363636363636,
+        "auc": 0.6666666666666667,
+        "tp": 2,
+        "fp": 7,
+        "fn": 0,
+        "tn": 2
+      },
+      "Other": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "tn": 3
+      },
+      "Retron": {
+        "f1": 0.20000000000000004,
+        "auc": 0.2285714285714286,
+        "tp": 1,
+        "fp": 4,
+        "fn": 4,
+        "tn": 3
+      },
+      "Retroviral": {
+        "f1": 0.6363636363636365,
+        "auc": 0.6944444444444444,
+        "tp": 7,
+        "fp": 3,
+        "fn": 5,
+        "tn": 3
+      },
+      "Unclassified": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1
+      }
+    }
+  },
+  "sparse_hybrid_clean_lr": {
+    "model": "sparse_hybrid_clean_lr",
+    "lofo_macro_f1_informative": 0.5700396825396825,
+    "overall_f1": 0.5,
+    "overall_auc": 0.7843915343915343,
+    "retroviral_tp_of_12": 2,
+    "feature_usage": {
+      "foldability_score": 7,
+      "fusion_compat_score": 7,
+      "fusion_compat_clash_score": 7,
+      "substrate_binding_score": 7,
+      "catalytic_score": 7,
+      "processivity_score": 7,
+      "ramachandran_outliers": 7,
+      "pocket_hbonds_per_res": 6,
+      "ramachandran_allowed": 6,
+      "salt_per_res": 5,
+      "hydrophobic_per_res": 5,
+      "ramachandran_favoured": 6,
+      "pocket_hbonds": 3,
+      "sasa_low_pct": 4,
+      "hbonds_per_res": 1,
+      "sasa_avg": 2,
+      "thumb_charge_class_num": 1,
+      "thumb_surface_net_charge": 2,
+      "sasa_total": 1,
+      "camsol_min_profile": 1,
+      "n_salt_bridges": 1,
+      "g_factor_overall": 1
+    },
+    "per_family": {
+      "CRISPR-associated": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      "Group_II_Intron": {
+        "f1": 0.8,
+        "auc": 1.0,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 2
+      },
+      "LTR_Retrotransposon": {
+        "f1": 0.4444444444444445,
+        "auc": 1.0,
+        "tp": 2,
+        "fp": 5,
+        "fn": 0,
+        "tn": 4
+      },
+      "Other": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      "Retron": {
+        "f1": 0.7499999999999999,
+        "auc": 0.7428571428571429,
+        "tp": 3,
+        "fp": 0,
+        "fn": 2,
+        "tn": 7
+      },
+      "Retroviral": {
+        "f1": 0.2857142857142857,
+        "auc": 0.6805555555555556,
+        "tp": 2,
+        "fp": 0,
+        "fn": 10,
+        "tn": 6
+      },
+      "Unclassified": {
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1
+      }
+    }
+  }
+}

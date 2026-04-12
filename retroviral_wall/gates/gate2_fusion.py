@@ -7,17 +7,22 @@ from retroviral_wall.gates.base import AbstractGate, GateResult
 from retroviral_wall.utils.alignment import structural_align
 from retroviral_wall.utils.geometry import compute_steric_clashes, sigmoid
 from retroviral_wall.utils.pdb_utils import extract_atom_records
+from retroviral_wall.utils.structural_features import fusion_context_features
 
 
 class FusionCompatibilityGate(AbstractGate):
-    def __init__(self):
+    def __init__(self, use_similarity_fallback: bool = True):
         super().__init__("fusion_compat")
+        self.use_similarity_fallback = use_similarity_fallback
         self.weights = {
-            "clash_score": 0.35,
-            "alignment_quality": 0.15,
-            "active_site_access": 0.25,
-            "linker_feasibility": 0.15,
-            "size_penalty": 0.10,
+            "clash_score": 0.25,
+            "alignment_quality": 0.10,
+            "active_site_access": 0.20,
+            "linker_feasibility": 0.12,
+            "size_penalty": 0.08,
+            "terminal_accessibility": 0.08,
+            "core_compactness": 0.10,
+            "fusion_readiness": 0.07,
         }
         self._reference_context: dict | None = None
 
@@ -91,10 +96,13 @@ class FusionCompatibilityGate(AbstractGate):
             pdb_path = f"{structures_dir}/{rt_name}.pdb"
 
             align_res = structural_align(pdb_path, target_atoms=ref.get("rt_ca"))
-            fallback_align = float(hc.get("foldseek_TM_MMLV", np.nan))
-            if np.isnan(fallback_align):
-                fallback_align = float(hc.get("foldseek_best_TM", 0.4))
-            align = max(float(align_res.tm_score), float(np.clip(fallback_align, 0, 1)))
+            if self.use_similarity_fallback:
+                fallback_align = float(hc.get("foldseek_TM_MMLV", np.nan))
+                if np.isnan(fallback_align):
+                    fallback_align = float(hc.get("foldseek_best_TM", 0.4))
+                align = max(float(align_res.tm_score), float(np.clip(fallback_align, 0, 1)))
+            else:
+                align = float(np.clip(align_res.tm_score, 0, 1))
 
             n_clashes, n_contacts = compute_steric_clashes(
                 query_coords=align_res.aligned_atoms,
@@ -126,6 +134,18 @@ class FusionCompatibilityGate(AbstractGate):
                 candidate_ca_t = np.zeros((0, 3))
             linker_feasibility = self._linker_score(candidate_ca_t, ref.get("anchor_coord", np.zeros(3)))
             size_penalty = self._size_score(length)
+            fusion_ctx = fusion_context_features(pdb_path)
+            terminal_accessibility = float(fusion_ctx["terminal_accessibility"])
+            core_compactness = float(fusion_ctx["core_compactness"])
+            fusion_readiness = float(
+                np.clip(
+                    0.45 * fusion_ctx["active_site_exposure"]
+                    + 0.30 * (1.0 - fusion_ctx["terminal_disorder_proxy"])
+                    + 0.25 * terminal_accessibility,
+                    0,
+                    1,
+                )
+            )
 
             sub = {
                 "clash_score": clash_score,
@@ -133,14 +153,17 @@ class FusionCompatibilityGate(AbstractGate):
                 "active_site_access": float(np.clip(active_site_access, 0, 1)),
                 "linker_feasibility": float(np.clip(linker_feasibility, 0, 1)),
                 "size_penalty": float(np.clip(size_penalty, 0, 1)),
+                "terminal_accessibility": terminal_accessibility,
+                "core_compactness": core_compactness,
+                "fusion_readiness": fusion_readiness,
             }
             score = float(np.exp(sum(self.weights[k] * np.log(max(v, 1e-6)) for k, v in sub.items())))
-            confidence = float(np.clip(0.3 + 0.35 * sub["alignment_quality"] + 0.35 * sub["active_site_access"], 0, 1))
+            confidence = float(np.clip(0.25 + 0.25 * sub["alignment_quality"] + 0.25 * sub["active_site_access"] + 0.25 * sub["fusion_readiness"], 0, 1))
             if sub["clash_score"] < 0.35:
                 failure = "Likely steric incompatibility with Cas9 context"
             elif sub["linker_feasibility"] < 0.4:
                 failure = "Poor linker geometry to Cas9 anchor"
-            elif sub["active_site_access"] < 0.35:
+            elif sub["active_site_access"] < 0.35 or sub["fusion_readiness"] < 0.35:
                 failure = "Active site poorly positioned in PE context"
             else:
                 failure = ""

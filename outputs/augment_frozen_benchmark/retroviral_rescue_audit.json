@@ -1,0 +1,55 @@
+{
+  "best_model": "frozen_hybrid_lr",
+  "n_tp": 7,
+  "n_fn": 5,
+  "feature_deltas": [
+    {
+      "feature": "corridor_openness",
+      "tp_mean": 0.2777071271338,
+      "fn_mean": 0.37703961796933505,
+      "delta_tp_minus_fn": -0.09933249083553503
+    },
+    {
+      "feature": "corridor_hydrophobic_tolerance",
+      "tp_mean": 0.30667664595410543,
+      "fn_mean": 0.23587161802059234,
+      "delta_tp_minus_fn": 0.07080502793351309
+    },
+    {
+      "feature": "corridor_catalytic_shell_basicity",
+      "tp_mean": 0.39613621082298117,
+      "fn_mean": 0.36355042749980865,
+      "delta_tp_minus_fn": 0.032585783323172524
+    },
+    {
+      "feature": "priming_shell_readiness",
+      "tp_mean": 0.2151051951997219,
+      "fn_mean": 0.2379298805567168,
+      "delta_tp_minus_fn": -0.02282468535699489
+    },
+    {
+      "feature": "corridor_bottleneck",
+      "tp_mean": 0.13864140996273824,
+      "fn_mean": 0.15792865405782108,
+      "delta_tp_minus_fn": -0.01928724409508284
+    },
+    {
+      "feature": "template_grip_positive_groove",
+      "tp_mean": 0.2518175187130592,
+      "fn_mean": 0.2630604028531729,
+      "delta_tp_minus_fn": -0.011242884140113707
+    },
+    {
+      "feature": "corridor_basic_density",
+      "tp_mean": 0.3881685066460599,
+      "fn_mean": 0.3796914743699997,
+      "delta_tp_minus_fn": 0.00847703227606017
+    },
+    {
+      "feature": "corridor_order",
+      "tp_mean": 0.00866418810490012,
+      "fn_mean": 0.008167358272501726,
+      "delta_tp_minus_fn": 0.000496829832398394
+    }
+  ]
+}

@@ -46,3 +46,17 @@ Architecture and score reference:
 
 - This implementation is intentionally robust to missing external binaries (TM-align) and missing heavy Bayesian deps.
 - Where full structural simulation is unavailable, biologically motivated proxies are used to keep the pipeline runnable and extensible.
+
+## Current Benchmark
+
+The current frozen benchmark for honest cross-family generalization is the `hybrid_lr` result from `experiments/generalization_workflow.py`.
+
+- LOFO informative macro-F1: `0.7217`
+- overall F1: `0.7027`
+- overall AUC: `0.7751`
+- Retroviral TP of 12: `7`
+
+Reference files:
+
+- `benchmarks/current_winner.json`
+- `docs/CURRENT_BENCHMARK.md`

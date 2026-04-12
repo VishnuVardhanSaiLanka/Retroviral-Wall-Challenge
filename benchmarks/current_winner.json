@@ -1,0 +1,18 @@
+{
+  "date_frozen": "2026-04-12",
+  "workflow": "experiments/generalization_workflow.py",
+  "winner_model": "hybrid_lr",
+  "objective": "LOFO informative macro-F1",
+  "score": 0.7217105263157895,
+  "secondary_metrics": {
+    "overall_f1": 0.7027027027027026,
+    "overall_auc": 0.7751322751322751,
+    "retroviral_tp_of_12": 7,
+    "n_features": 33
+  },
+  "notes": [
+    "This is the current benchmark to beat for honest cross-family generalization.",
+    "Future experiments should compare against this frozen score and feature pool before claiming improvement.",
+    "This benchmark comes from the family-robust workflow, not the public leaderboard."
+  ]
+}

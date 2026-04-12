@@ -1,0 +1,1179 @@
+{
+  "gate_audit": {
+    "per_gate": {
+      "foldability": {
+        "overall_auc": 0.5410052910052909,
+        "overall_f1_at_0.5": 0.0,
+        "informative_macro_f1_at_0.5": 0.0,
+        "family_eta_squared": 0.05466010176343269,
+        "active_mean": 0.019274142362649842,
+        "inactive_mean": 0.014520509650500493,
+        "confidence_mean": 0.9747368421052632,
+        "confidence_active_mean": 0.9657142857142857,
+        "confidence_inactive_mean": 0.98,
+        "failure_rate": 1.0,
+        "per_family": {
+          "CRISPR-associated": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.0007561942693900599
+          },
+          "Group_II_Intron": {
+            "n": 5,
+            "active_n": 2,
+            "auc": 0.33333333333333337,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.00081474116308614
+          },
+          "LTR_Retrotransposon": {
+            "n": 11,
+            "active_n": 2,
+            "auc": 0.7222222222222222,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.04577796242878552
+          },
+          "Other": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.0007441998494170201
+          },
+          "Retron": {
+            "n": 12,
+            "active_n": 5,
+            "auc": 0.3428571428571429,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.03309536960504062
+          },
+          "Retroviral": {
+            "n": 18,
+            "active_n": 12,
+            "auc": 0.4722222222222222,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.0008010168052686222
+          },
+          "Unclassified": {
+            "n": 1,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.0007993361522348
+          }
+        }
+      },
+      "fusion_compat": {
+        "overall_auc": 0.6137566137566137,
+        "overall_f1_at_0.5": 0.5,
+        "informative_macro_f1_at_0.5": 0.30681818181818177,
+        "family_eta_squared": 0.2536163879360797,
+        "active_mean": 0.4841790067206391,
+        "inactive_mean": 0.40991047472587805,
+        "confidence_mean": 0.7803367059295945,
+        "confidence_active_mean": 0.7921015359892561,
+        "confidence_inactive_mean": 0.7734738883947919,
+        "failure_rate": 0.8771929824561403,
+        "per_family": {
+          "CRISPR-associated": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.31516297385475117
+          },
+          "Group_II_Intron": {
+            "n": 5,
+            "active_n": 2,
+            "auc": 0.33333333333333337,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.41895174238438015
+          },
+          "LTR_Retrotransposon": {
+            "n": 11,
+            "active_n": 2,
+            "auc": 0.8333333333333334,
+            "f1_at_0.5": 0.5,
+            "mean_score": 0.5306365900042063
+          },
+          "Other": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.3288009656685669
+          },
+          "Retron": {
+            "n": 12,
+            "active_n": 5,
+            "auc": 0.4,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.33748406382191004
+          },
+          "Retroviral": {
+            "n": 18,
+            "active_n": 12,
+            "auc": 0.5833333333333333,
+            "f1_at_0.5": 0.7272727272727272,
+            "mean_score": 0.5246636993910171
+          },
+          "Unclassified": {
+            "n": 1,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.2791999767790445
+          }
+        }
+      },
+      "fusion_compat_clash": {
+        "overall_auc": 0.6633597883597884,
+        "overall_f1_at_0.5": 0.4571428571428571,
+        "informative_macro_f1_at_0.5": 0.25,
+        "family_eta_squared": 0.261585705393683,
+        "active_mean": 0.45252712976699894,
+        "inactive_mean": 0.2753422808674396,
+        "confidence_mean": null,
+        "confidence_active_mean": null,
+        "confidence_inactive_mean": null,
+        "failure_rate": null,
+        "per_family": {
+          "CRISPR-associated": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.12146736197927477
+          },
+          "Group_II_Intron": {
+            "n": 5,
+            "active_n": 2,
+            "auc": 0.6666666666666667,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.3078349917458826
+          },
+          "LTR_Retrotransposon": {
+            "n": 11,
+            "active_n": 2,
+            "auc": 0.8333333333333334,
+            "f1_at_0.5": 0.3333333333333333,
+            "mean_score": 0.4535120677768552
+          },
+          "Other": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.1467038712974958
+          },
+          "Retron": {
+            "n": 12,
+            "active_n": 5,
+            "auc": 0.4571428571428571,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.18745823625657318
+          },
+          "Retroviral": {
+            "n": 18,
+            "active_n": 12,
+            "auc": 0.5416666666666667,
+            "f1_at_0.5": 0.6666666666666666,
+            "mean_score": 0.5135265451605052
+          },
+          "Unclassified": {
+            "n": 1,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.053751317708161
+          }
+        }
+      },
+      "substrate_binding": {
+        "overall_auc": 0.5998677248677248,
+        "overall_f1_at_0.5": 0.5263157894736843,
+        "informative_macro_f1_at_0.5": 0.5511904761904762,
+        "family_eta_squared": 0.07957871299209135,
+        "active_mean": 0.8609478646502566,
+        "inactive_mean": 0.8442522424828814,
+        "confidence_mean": 0.859498617843322,
+        "confidence_active_mean": 0.8721772453369228,
+        "confidence_inactive_mean": 0.8521027518053887,
+        "failure_rate": 0.19298245614035087,
+        "per_family": {
+          "CRISPR-associated": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.8006945829029573
+          },
+          "Group_II_Intron": {
+            "n": 5,
+            "active_n": 2,
+            "auc": 0.33333333333333337,
+            "f1_at_0.5": 0.5714285714285715,
+            "mean_score": 0.8590268596951077
+          },
+          "LTR_Retrotransposon": {
+            "n": 11,
+            "active_n": 2,
+            "auc": 0.6111111111111112,
+            "f1_at_0.5": 0.33333333333333337,
+            "mean_score": 0.8245461598198712
+          },
+          "Other": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.8872868886543778
+          },
+          "Retron": {
+            "n": 12,
+            "active_n": 5,
+            "auc": 0.45714285714285713,
+            "f1_at_0.5": 0.5000000000000001,
+            "mean_score": 0.8170250701674143
+          },
+          "Retroviral": {
+            "n": 18,
+            "active_n": 12,
+            "auc": 0.5277777777777778,
+            "f1_at_0.5": 0.8,
+            "mean_score": 0.8911442437459871
+          },
+          "Unclassified": {
+            "n": 1,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.8230392433215825
+          }
+        }
+      },
+      "catalytic": {
+        "overall_auc": 0.6117724867724866,
+        "overall_f1_at_0.5": 0.5263157894736843,
+        "informative_macro_f1_at_0.5": 0.5511904761904762,
+        "family_eta_squared": 0.20135806629951755,
+        "active_mean": 0.8386775554361263,
+        "inactive_mean": 0.8016629166369813,
+        "confidence_mean": 0.9564185294991797,
+        "confidence_active_mean": 0.9687164676995159,
+        "confidence_inactive_mean": 0.9492447322156503,
+        "failure_rate": 0.12280701754385964,
+        "per_family": {
+          "CRISPR-associated": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.7667815003603882
+          },
+          "Group_II_Intron": {
+            "n": 5,
+            "active_n": 2,
+            "auc": 0.33333333333333337,
+            "f1_at_0.5": 0.5714285714285715,
+            "mean_score": 0.8216264468333565
+          },
+          "LTR_Retrotransposon": {
+            "n": 11,
+            "active_n": 2,
+            "auc": 0.8333333333333334,
+            "f1_at_0.5": 0.33333333333333337,
+            "mean_score": 0.7541508323879956
+          },
+          "Other": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.7960103681906692
+          },
+          "Retron": {
+            "n": 12,
+            "active_n": 5,
+            "auc": 0.17142857142857143,
+            "f1_at_0.5": 0.5000000000000001,
+            "mean_score": 0.7982737944964953
+          },
+          "Retroviral": {
+            "n": 18,
+            "active_n": 12,
+            "auc": 0.5555555555555556,
+            "f1_at_0.5": 0.8,
+            "mean_score": 0.8804983617940342
+          },
+          "Unclassified": {
+            "n": 1,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.8260868836494104
+          }
+        }
+      },
+      "processivity": {
+        "overall_auc": 0.5925925925925926,
+        "overall_f1_at_0.5": 0.5277777777777779,
+        "informative_macro_f1_at_0.5": 0.555952380952381,
+        "family_eta_squared": 0.03277996046618563,
+        "active_mean": 0.7702212438152265,
+        "inactive_mean": 0.712807193480613,
+        "confidence_mean": 0.8778459388377104,
+        "confidence_active_mean": 0.8664123792611224,
+        "confidence_inactive_mean": 0.8845155152573868,
+        "failure_rate": 0.19298245614035087,
+        "per_family": {
+          "CRISPR-associated": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.739477421109248
+          },
+          "Group_II_Intron": {
+            "n": 5,
+            "active_n": 2,
+            "auc": 0.33333333333333337,
+            "f1_at_0.5": 0.5714285714285715,
+            "mean_score": 0.7999733205244787
+          },
+          "LTR_Retrotransposon": {
+            "n": 11,
+            "active_n": 2,
+            "auc": 0.2222222222222222,
+            "f1_at_0.5": 0.33333333333333337,
+            "mean_score": 0.7068809328743122
+          },
+          "Other": {
+            "n": 5,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.6814494845250251
+          },
+          "Retron": {
+            "n": 12,
+            "active_n": 5,
+            "auc": 0.48571428571428577,
+            "f1_at_0.5": 0.5333333333333333,
+            "mean_score": 0.7445695993624186
+          },
+          "Retroviral": {
+            "n": 18,
+            "active_n": 12,
+            "auc": 0.7916666666666667,
+            "f1_at_0.5": 0.7857142857142857,
+            "mean_score": 0.7354110921482353
+          },
+          "Unclassified": {
+            "n": 1,
+            "active_n": 0,
+            "auc": null,
+            "f1_at_0.5": 0.0,
+            "mean_score": 0.7832788419933716
+          }
+        }
+      }
+    },
+    "weakest_gate_counts": {
+      "foldability": 55,
+      "processivity": 1,
+      "fusion_compat_clash": 1
+    },
+    "pairwise_score_correlation": {
+      "foldability_score|fusion_compat_score": 0.035244356308990206,
+      "foldability_score|fusion_compat_clash_score": 0.006093179257267069,
+      "foldability_score|substrate_binding_score": -0.7553454672680745,
+      "foldability_score|catalytic_score": -0.6755156972508171,
+      "foldability_score|processivity_score": -0.6217040072875629,
+      "fusion_compat_score|fusion_compat_clash_score": 0.9393370385823795,
+      "fusion_compat_score|substrate_binding_score": 0.1251695541096198,
+      "fusion_compat_score|catalytic_score": 0.2599799494391077,
+      "fusion_compat_score|processivity_score": -0.014941607835094795,
+      "fusion_compat_clash_score|substrate_binding_score": 0.11009227622484664,
+      "fusion_compat_clash_score|catalytic_score": 0.2225981548275276,
+      "fusion_compat_clash_score|processivity_score": 0.0408037007772039,
+      "substrate_binding_score|catalytic_score": 0.6651455627714278,
+      "substrate_binding_score|processivity_score": 0.4093860871518086,
+      "catalytic_score|processivity_score": 0.4067833584809487
+    }
+  },
+  "selected_features": [
+    {
+      "feature": "ramachandran_outliers",
+      "active_auc_abs": 0.7294973544973544,
+      "family_mi": 0.0,
+      "stable_signal": 0.8073412698412699,
+      "leakage_adjusted_score": 1.172089947089947,
+      "is_foldseek": false
+    },
+    {
+      "feature": "ramachandran_allowed",
+      "active_auc_abs": 0.6746031746031746,
+      "family_mi": 0.0,
+      "stable_signal": 0.772718253968254,
+      "leakage_adjusted_score": 1.1100198412698412,
+      "is_foldseek": false
+    },
+    {
+      "feature": "pocket_hbonds_per_res",
+      "active_auc_abs": 0.6646825396825398,
+      "family_mi": 0.0,
+      "stable_signal": 0.776686507936508,
+      "leakage_adjusted_score": 1.109027777777778,
+      "is_foldseek": false
+    },
+    {
+      "feature": "ramachandran_favoured",
+      "active_auc_abs": 0.6567460317460317,
+      "family_mi": 0.0,
+      "stable_signal": 0.7553571428571428,
+      "leakage_adjusted_score": 1.0837301587301587,
+      "is_foldseek": false
+    },
+    {
+      "feature": "salt_per_res",
+      "active_auc_abs": 0.71494708994709,
+      "family_mi": 0.0,
+      "stable_signal": 0.7254464285714286,
+      "leakage_adjusted_score": 1.0829199735449735,
+      "is_foldseek": false
+    },
+    {
+      "feature": "hydrophobic_per_res",
+      "active_auc_abs": 0.6051587301587302,
+      "family_mi": 0.07525816496258697,
+      "stable_signal": 0.8130456349206349,
+      "leakage_adjusted_score": 1.05918137627806,
+      "is_foldseek": false
+    },
+    {
+      "feature": "pocket_hbonds",
+      "active_auc_abs": 0.6150793650793651,
+      "family_mi": 0.045853407276114755,
+      "stable_signal": 0.778422619047619,
+      "leakage_adjusted_score": 1.0515722461302155,
+      "is_foldseek": false
+    },
+    {
+      "feature": "sasa_low_pct",
+      "active_auc_abs": 0.683862433862434,
+      "family_mi": 0.0410375689113569,
+      "stable_signal": 0.727281746031746,
+      "leakage_adjusted_score": 1.0384347862794452,
+      "is_foldseek": false
+    },
+    {
+      "feature": "n_salt_bridges",
+      "active_auc_abs": 0.6058201058201058,
+      "family_mi": 0.0,
+      "stable_signal": 0.7219742063492064,
+      "leakage_adjusted_score": 1.0248842592592593,
+      "is_foldseek": false
+    },
+    {
+      "feature": "sasa_avg",
+      "active_auc_abs": 0.6349206349206349,
+      "family_mi": 0.12942265159456046,
+      "stable_signal": 0.7823412698412698,
+      "leakage_adjusted_score": 1.0027345986056668,
+      "is_foldseek": false
+    },
+    {
+      "feature": "sasa_total",
+      "active_auc_abs": 0.6349206349206349,
+      "family_mi": 0.13329903185681058,
+      "stable_signal": 0.7823412698412698,
+      "leakage_adjusted_score": 0.9998273134089792,
+      "is_foldseek": false
+    },
+    {
+      "feature": "hbonds_per_res",
+      "active_auc_abs": 0.8300264550264551,
+      "family_mi": 0.4136992216513571,
+      "stable_signal": 0.8543154761904762,
+      "leakage_adjusted_score": 0.959054287465186,
+      "is_foldseek": false
+    },
+    {
+      "feature": "thumb_charge_class_num",
+      "active_auc_abs": 0.6435185185185185,
+      "family_mi": 0.04315699021973396,
+      "stable_signal": 0.6676587301587301,
+      "leakage_adjusted_score": 0.9570502467531888,
+      "is_foldseek": false
+    },
+    {
+      "feature": "perplexity",
+      "active_auc_abs": 0.6494708994708995,
+      "family_mi": 0.22655664329047553,
+      "stable_signal": 0.7960317460317461,
+      "leakage_adjusted_score": 0.9508497132993392,
+      "is_foldseek": false
+    },
+    {
+      "feature": "avg_log_likelihood",
+      "active_auc_abs": 0.6494708994708995,
+      "family_mi": 0.22919584301788687,
+      "stable_signal": 0.7960317460317461,
+      "leakage_adjusted_score": 0.9488703135037807,
+      "is_foldseek": false
+    },
+    {
+      "feature": "thumb_fident",
+      "active_auc_abs": 0.7215608465608465,
+      "family_mi": 0.25485988785464153,
+      "stable_signal": 0.7526289682539682,
+      "leakage_adjusted_score": 0.9222644756434103,
+      "is_foldseek": false
+    },
+    {
+      "feature": "triad_found_bin",
+      "active_auc_abs": 0.621031746031746,
+      "family_mi": 0.1895775334744454,
+      "stable_signal": 0.7416666666666667,
+      "leakage_adjusted_score": 0.9099993895767057,
+      "is_foldseek": false
+    },
+    {
+      "feature": "triad_best_rmsd",
+      "active_auc_abs": 0.6917989417989419,
+      "family_mi": 0.392050280517497,
+      "stable_signal": 0.7719246031746032,
+      "leakage_adjusted_score": 0.8237863636859514,
+      "is_foldseek": false
+    },
+    {
+      "feature": "thumb_total_residues",
+      "active_auc_abs": 0.6587301587301587,
+      "family_mi": 0.22376433391245154,
+      "stable_signal": 0.6622023809523809,
+      "leakage_adjusted_score": 0.8237442098831216,
+      "is_foldseek": false
+    },
+    {
+      "feature": "pct_E",
+      "active_auc_abs": 0.6805555555555556,
+      "family_mi": 0.34875304247420136,
+      "stable_signal": 0.7103174603174602,
+      "leakage_adjusted_score": 0.7890304562395871,
+      "is_foldseek": false
+    },
+    {
+      "feature": "aromaticity",
+      "active_auc_abs": 0.7202380952380952,
+      "family_mi": 0.2607518498536874,
+      "stable_signal": 0.6100694444444444,
+      "leakage_adjusted_score": 0.7746246046732265,
+      "is_foldseek": false
+    },
+    {
+      "feature": "pct_H",
+      "active_auc_abs": 0.7162698412698413,
+      "family_mi": 0.5170945063212948,
+      "stable_signal": 0.7783234126984127,
+      "leakage_adjusted_score": 0.7486374535923622,
+      "is_foldseek": false
+    },
+    {
+      "feature": "D1_D2_dist",
+      "active_auc_abs": 0.6402116402116402,
+      "family_mi": 0.42861998232353615,
+      "stable_signal": 0.7053571428571428,
+      "leakage_adjusted_score": 0.7039979762203107,
+      "is_foldseek": false
+    },
+    {
+      "feature": "best_s1_len",
+      "active_auc_abs": 0.6064814814814816,
+      "family_mi": 0.46243907519031113,
+      "stable_signal": 0.7311507936507935,
+      "leakage_adjusted_score": 0.6875622279988011,
+      "is_foldseek": false
+    },
+    {
+      "feature": "molecular_weight",
+      "active_auc_abs": 0.6296296296296297,
+      "family_mi": 0.41566857657006073,
+      "stable_signal": 0.6507936507936508,
+      "leakage_adjusted_score": 0.65385703318092,
+      "is_foldseek": false
+    },
+    {
+      "feature": "lysine_k_charge",
+      "active_auc_abs": 0.6097883597883597,
+      "family_mi": 0.507459249954485,
+      "stable_signal": 0.6507936507936508,
+      "leakage_adjusted_score": 0.575093393221967,
+      "is_foldseek": false
+    },
+    {
+      "feature": "aspartate_d_charge",
+      "active_auc_abs": 0.6355820105820106,
+      "family_mi": 0.4947734115173579,
+      "stable_signal": 0.5958829365079366,
+      "leakage_adjusted_score": 0.5425938831609235,
+      "is_foldseek": false
+    }
+  ],
+  "models": {
+    "gates_lr": {
+      "lofo_macro_f1_informative": 0.4868686868686869,
+      "overall_f1": 0.47058823529411764,
+      "overall_auc": 0.6150793650793651,
+      "retroviral_tp_of_12": 7,
+      "n_features": 6,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "tn": 4
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 0.6666666666666666,
+          "auc": 0.6666666666666667,
+          "tp": 2,
+          "fp": 2,
+          "fn": 0,
+          "tn": 1
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.4444444444444445,
+          "auc": 0.6666666666666667,
+          "tp": 2,
+          "fp": 5,
+          "fn": 0,
+          "tn": 4
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "tn": 3
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.20000000000000004,
+          "auc": 0.2285714285714286,
+          "tp": 1,
+          "fp": 4,
+          "fn": 4,
+          "tn": 3
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.6363636363636365,
+          "auc": 0.7361111111111112,
+          "tp": 7,
+          "fp": 3,
+          "fn": 5,
+          "tn": 3
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "tn": 0
+        }
+      }
+    },
+    "gates_et": {
+      "lofo_macro_f1_informative": 0.13846153846153847,
+      "overall_f1": 0.17647058823529413,
+      "overall_auc": 0.32671957671957674,
+      "retroviral_tp_of_12": 1,
+      "n_features": 6,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 0.0,
+          "auc": 0.16666666666666669,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "tn": 2
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.4,
+          "auc": 0.6111111111111112,
+          "tp": 2,
+          "fp": 6,
+          "fn": 0,
+          "tn": 3
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "tn": 3
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.0,
+          "auc": 0.3142857142857143,
+          "tp": 0,
+          "fp": 1,
+          "fn": 5,
+          "tn": 6
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.15384615384615385,
+          "auc": 0.375,
+          "tp": 1,
+          "fp": 0,
+          "fn": 11,
+          "tn": 6
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      }
+    },
+    "robust_handcrafted_lr": {
+      "lofo_macro_f1_informative": 0.6208333333333332,
+      "overall_f1": 0.5142857142857143,
+      "overall_auc": 0.753968253968254,
+      "retroviral_tp_of_12": 3,
+      "n_features": 27,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 1.0,
+          "auc": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.3333333333333333,
+          "auc": 0.7777777777777778,
+          "tp": 1,
+          "fp": 3,
+          "fn": 1,
+          "tn": 6
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "tn": 3
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.7499999999999999,
+          "auc": 0.7714285714285714,
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "tn": 7
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.4,
+          "auc": 0.7777777777777778,
+          "tp": 3,
+          "fp": 0,
+          "fn": 9,
+          "tn": 6
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      }
+    },
+    "robust_handcrafted_et": {
+      "lofo_macro_f1_informative": 0.6339285714285714,
+      "overall_f1": 0.5161290322580645,
+      "overall_auc": 0.6547619047619048,
+      "retroviral_tp_of_12": 2,
+      "n_features": 27,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 1.0,
+          "auc": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.5,
+          "auc": 0.6666666666666667,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "tn": 8
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "tn": 4
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.7499999999999999,
+          "auc": 0.6285714285714286,
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "tn": 7
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.2857142857142857,
+          "auc": 0.7083333333333335,
+          "tp": 2,
+          "fp": 0,
+          "fn": 10,
+          "tn": 6
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      }
+    },
+    "handcrafted_no_foldseek_lr": {
+      "lofo_macro_f1_informative": 0.6880952380952381,
+      "overall_f1": 0.5263157894736842,
+      "overall_auc": 0.6772486772486772,
+      "retroviral_tp_of_12": 2,
+      "n_features": 88,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "tn": 4
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 1.0,
+          "auc": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.8,
+          "auc": 0.9444444444444444,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 8
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "tn": 3
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.6666666666666666,
+          "auc": 0.8857142857142857,
+          "tp": 4,
+          "fp": 3,
+          "fn": 1,
+          "tn": 4
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.2857142857142857,
+          "auc": 0.8333333333333334,
+          "tp": 2,
+          "fp": 0,
+          "fn": 10,
+          "tn": 6
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      }
+    },
+    "hybrid_lr": {
+      "lofo_macro_f1_informative": 0.7217105263157895,
+      "overall_f1": 0.7027027027027026,
+      "overall_auc": 0.7751322751322751,
+      "retroviral_tp_of_12": 7,
+      "n_features": 33,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 1.0,
+          "auc": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.4,
+          "auc": 0.8333333333333334,
+          "tp": 1,
+          "fp": 2,
+          "fn": 1,
+          "tn": 7
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "tn": 4
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.7499999999999999,
+          "auc": 0.7142857142857142,
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "tn": 7
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.7368421052631579,
+          "auc": 0.7916666666666666,
+          "tp": 7,
+          "fp": 0,
+          "fn": 5,
+          "tn": 6
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      }
+    },
+    "hybrid_et": {
+      "lofo_macro_f1_informative": 0.6178921568627451,
+      "overall_f1": 0.5945945945945946,
+      "overall_auc": 0.6666666666666666,
+      "retroviral_tp_of_12": 5,
+      "n_features": 33,
+      "per_family": {
+        "CRISPR-associated": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5
+        },
+        "Group_II_Intron": {
+          "n": 5,
+          "n_active": 2,
+          "f1": 0.8,
+          "auc": 1.0,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 2
+        },
+        "LTR_Retrotransposon": {
+          "n": 11,
+          "n_active": 2,
+          "f1": 0.3333333333333333,
+          "auc": 0.7777777777777778,
+          "tp": 1,
+          "fp": 3,
+          "fn": 1,
+          "tn": 6
+        },
+        "Other": {
+          "n": 5,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "tn": 4
+        },
+        "Retron": {
+          "n": 12,
+          "n_active": 5,
+          "f1": 0.7499999999999999,
+          "auc": 0.6857142857142857,
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "tn": 7
+        },
+        "Retroviral": {
+          "n": 18,
+          "n_active": 12,
+          "f1": 0.5882352941176471,
+          "auc": 0.75,
+          "tp": 5,
+          "fp": 0,
+          "fn": 7,
+          "tn": 6
+        },
+        "Unclassified": {
+          "n": 1,
+          "n_active": 0,
+          "f1": 0.0,
+          "auc": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1
+        }
+      }
+    }
+  }
+}
