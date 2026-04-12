@@ -1,0 +1,17 @@
+model,lofo_macro_f1_informative,overall_f1,overall_auc,retroviral_tp_of_12,vs_benchmark,n_features_approx
+FROZEN_BENCHMARK_hybrid_lr,0.7217,0.7027,0.7751,7,0.0,33
+baseline_hybrid_lr,0.7217,0.7027,0.7751,7,0.0,33
+method7_two_model_ensemble,0.7217,0.7027,0.7685,7,0.0,34 (avg of 2)
+method11_balanced_threshold,0.7217,0.7027,0.7751,7,0.0,33
+method12_sqrt_eff_balanced,0.7217,0.7027,0.7659,7,0.0,33
+method9_efficiency_weighted,0.7199,0.6842,0.7738,7,-0.0018,33
+method3_ensemble,0.7021,0.6667,0.7183,7,-0.0196,3 diverse models
+method8_esm_cosine_tuned,0.6846,0.6154,0.7685,5,-0.0371,34
+method10_efficiency_esm,0.6771,0.6667,0.7513,7,-0.0446,34
+method14_baseline_effweight_ensemble,0.6771,0.6667,0.7738,7,-0.0446,33
+method5_combined,0.6756,0.5333,0.5278,2,-0.0461,~85 (variable)
+method6_esm_cosine,0.6679,0.6111,0.7447,5,-0.0538,34
+method1_esm_residualized,0.6095,0.5641,0.7751,6,-0.1122,48 (~33+15)
+method2_nested_lofo,0.5839,0.4848,0.6772,2,-0.1378,variable per fold
+method4_interactions_elasticnet,0.5714,0.4848,0.6786,2,-0.1503,69
+method13_ordinal_ridge,0.5125,0.45,0.6839,3,-0.2092,33
