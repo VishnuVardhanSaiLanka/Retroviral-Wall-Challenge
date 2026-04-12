@@ -1,0 +1,174 @@
+{
+  "four_model_blend_w40_25_05_30": {
+    "lofo_macro_f1_informative": 0.8230994152046783,
+    "overall_f1": 0.7692307692307692,
+    "overall_auc": 0.7473544973544973,
+    "retroviral_tp_of_12": 7,
+    "per_family": {
+      "CRISPR-associated": {
+        "n": 5,
+        "n_active": 0,
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      "Group_II_Intron": {
+        "n": 5,
+        "n_active": 2,
+        "f1": 1.0,
+        "auc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      "LTR_Retrotransposon": {
+        "n": 11,
+        "n_active": 2,
+        "f1": 0.6666666666666666,
+        "auc": 0.8888888888888888,
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "tn": 7
+      },
+      "Other": {
+        "n": 5,
+        "n_active": 0,
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 4
+      },
+      "Retron": {
+        "n": 12,
+        "n_active": 5,
+        "f1": 0.888888888888889,
+        "auc": 0.8571428571428572,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "tn": 7
+      },
+      "Retroviral": {
+        "n": 18,
+        "n_active": 12,
+        "f1": 0.7368421052631579,
+        "auc": 0.8055555555555556,
+        "tp": 7,
+        "fp": 0,
+        "fn": 5,
+        "tn": 6
+      },
+      "Unclassified": {
+        "n": 1,
+        "n_active": 0,
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1
+      }
+    },
+    "label": "winner_four_model_blend",
+    "config": {
+      "w_hyb": 0.4,
+      "w_hc": 0.25,
+      "w_knn": 0.05,
+      "w_lda": 0.3,
+      "knn_k": 3
+    }
+  },
+  "two_model_blend_lr_lda": {
+    "lofo_macro_f1_informative": 0.8230994152046783,
+    "overall_f1": 0.7692307692307692,
+    "overall_auc": 0.7685185185185185,
+    "retroviral_tp_of_12": 7,
+    "per_family": {
+      "CRISPR-associated": {
+        "n": 5,
+        "n_active": 0,
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      "Group_II_Intron": {
+        "n": 5,
+        "n_active": 2,
+        "f1": 1.0,
+        "auc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      "LTR_Retrotransposon": {
+        "n": 11,
+        "n_active": 2,
+        "f1": 0.6666666666666666,
+        "auc": 0.9444444444444444,
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "tn": 7
+      },
+      "Other": {
+        "n": 5,
+        "n_active": 0,
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "tn": 4
+      },
+      "Retron": {
+        "n": 12,
+        "n_active": 5,
+        "f1": 0.888888888888889,
+        "auc": 0.8571428571428572,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "tn": 7
+      },
+      "Retroviral": {
+        "n": 18,
+        "n_active": 12,
+        "f1": 0.7368421052631579,
+        "auc": 0.7916666666666666,
+        "tp": 7,
+        "fp": 0,
+        "fn": 5,
+        "tn": 6
+      },
+      "Unclassified": {
+        "n": 1,
+        "n_active": 0,
+        "f1": 0.0,
+        "auc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1
+      }
+    },
+    "label": "winner_four_model_blend",
+    "config": {
+      "w_hyb": 0.15,
+      "w_hc": 0.0,
+      "w_knn": 0.0,
+      "w_lda": 0.85,
+      "knn_k": 3
+    }
+  }
+}

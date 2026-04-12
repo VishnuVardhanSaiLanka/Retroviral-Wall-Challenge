@@ -1,0 +1,5 @@
+model,lofo_macro_f1_informative,vs_prev_winner,ltr_f1,retro_f1,retron_f1,group2_f1,overall_f1,overall_auc,retroviral_tp_of_12
+four_model_blend_w40_25_05_30,0.8231,0.0347,0.6667,0.7368,0.8889,1.0,0.7692,0.7474,7.0
+two_model_blend_lr_lda,0.8231,0.0347,0.6667,0.7368,0.8889,1.0,0.7692,0.7685,7.0
+PREVIOUS_BREAKTHROUGH (3-model),0.7884,0.0,0.667,0.737,0.75,1.0,,,
+ORIGINAL_BENCHMARK (Codex),0.7217,-0.06669999999999998,0.4,0.737,0.75,1.0,,,
